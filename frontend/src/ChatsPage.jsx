@@ -11,7 +11,7 @@ const ChatsPage = (props) => {
                 // 5364cd84-7ba2-410d-b436-44bdac5c1ca4
                 projectId="5364cd84-7ba2-410d-b436-44bdac5c1ca4"
                 username={props.user.username}
-                secret={props.user.username}
+                secret={props.user.secret} //Pases username instead
                 style={{ height: '100%' }}
             />
         </div>
