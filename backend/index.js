@@ -3,7 +3,7 @@ const cors = require("cors");
 const { default: axios } = require("axios");
 require("dotenv").config();
 const host = process.env.HOST;
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 
 const app = express();
 app.use(express.json());
@@ -25,6 +25,6 @@ app.post("/authenticate", async (req, res) => {
     }
 });
 
-app.listen(port, host, () => {
-    console.log(`Server is running on http://${host}:${port}`);
+app.listen(port,  () => {
+    console.log(`Server is running on port ${port}`);
 });
