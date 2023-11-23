@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./index.js"
+    "dev": "vite",
+    "build": "vite build",
+    "start": "npm i && nodemon ./index.js",
+    "start-frontend": "cd ../frontend && npm i && npm run dev"
   },
   "keywords": [],
   "author": "",
