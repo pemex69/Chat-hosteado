@@ -1,15 +1,14 @@
 import PropTypes from 'prop-types';
 import axios from 'axios';
+const url = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000';
 
 const AuthPage = (props) => {
     const onSubmit = (e) => {
         e.preventDefault();
 
-        const host = 'localhost';
-        const port = 3000;
         const { value } = e.target[0];
         axios
-            .post(`http://${host}:${port}/authenticate`, { username: value })
+            .post(`${url}/authenticate`, { username: value })
             .then((r => props.onAuth({ ...r.data, secret: value })))
             .catch((error) => {
                 console.log(error);
