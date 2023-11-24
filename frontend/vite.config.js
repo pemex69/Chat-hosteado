@@ -1,9 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import vitePluginRequire from 'vite-plugin-require'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  plugins: [react(), vitePluginRequire()],
+  plugins: [react()],
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
@@ -13,4 +12,8 @@ export default defineConfig({
       input: 'index.html',
     },
   },
-})
+  esbuild: {
+    // Set target to 'es2015' or 'esnext' to transpile CommonJS modules
+    target: 'es2015',
+  },
+});
