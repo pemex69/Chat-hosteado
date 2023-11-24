@@ -19,7 +19,7 @@ const AuthPage = (props) => {
     return (
         <div className="background">
             <form onSubmit={onSubmit} className="form-card">
-                <div className="form-title">chat de alma</div>
+                <div className="form-title">Chat de SD</div>
 
                 <div className="form-subtitle">Ingresa un nombre de usuario para empezar:</div>
 
