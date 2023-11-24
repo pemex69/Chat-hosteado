@@ -5,5 +5,11 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: true,
+    manifest: true,
+    rollupOptions: {
+      input: 'src/index.html',
+    },
   },
 })
