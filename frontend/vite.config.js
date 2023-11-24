@@ -9,7 +9,7 @@ export default defineConfig({
     sourcemap: true,
     manifest: true,
     rollupOptions: {
-      input: 'src/index.html',
+      input: 'index.html',
     },
   },
 })
