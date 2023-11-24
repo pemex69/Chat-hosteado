@@ -25,5 +25,5 @@ app.post("/authenticate", async (req, res) => {
 });
 
 app.listen(process.env.VITE_PORT,  () => {
-    console.log(`Server is running on port ${port}`);
+    console.log(`Server is running on port ${process.env.VITE_PORT}`);
 });
