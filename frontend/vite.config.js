@@ -20,7 +20,7 @@ export default defineConfig({
     },
   },
   optimizeDeps: {
-    include: ['nextjs-websocket', 'websocket', 'react', 'react-dom'], // Add any other dependencies that need commonjs support 
+    include: ['nextjs-websocket', 'websocket', 'react', 'react-dom', 'react-chat-engine-advanced'], // Add any other dependencies that need commonjs support 
   },
   server: {
     fs: {
